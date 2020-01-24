@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "01ac9718-433b-4c88-94c7-448efe93af86",
+    "title": "[CRM-092] 전자계약서 개발",
+    "content": "line works의 서비스 API 토큰 발급 기능 개발",
+    "createdAt": "2020-01-22 09:22:05",
+    "time": 3,
+    "category": "dev",
+    "userId": "kjs"
+  },
+  {
+    "id": "027e0767-a5d9-4ddb-8c62-ca806eb3918e",
+    "title": "[PROD-43] 예약 생성 / 수정 API 로직 개선",
+    "content": "- 예약 생성 테스트 및 초기화 과정 수정 - 수정 테스트 및 버그 수정",
+    "createdAt": "2020-01-22 09:28:13",
+    "time": 4,
+    "category": "dev",
+    "userId": "kjh"
+  },
+  {
+    "id": "03701381-e551-447e-adf7-8b1ec4c056fd",
+    "title": "[PROD-34] mytable-reservation-alarm",
+    "content": "코드 포팅 및 테스트",
+    "createdAt": "2020-01-21 09:32:06",
+    "time": 2,
+    "category": "dev",
+    "userId": "lsy"
+  },
+  {
+    "id": "04eeac68-ab98-42fa-a9a7-b75b799cb6c2",
+    "title": "2020년 1월 자동회신 포인트 추출",
+    "content": "1월 매장들의 자동회신 포인트 데이터 추출 및 전달 (경영혁신팀 박준오님)",
+    "createdAt": "2020-01-22 09:00:00",
+    "time": 1,
+    "category": "request",
+    "userId": "kjs"
+  },
+  {
+    "id": "050e51df-8529-4d4a-93d2-f5ba04996805",
+    "title": "업무보고 프로그램 개발",
+    "content": "업로드 페이지 API통신 및 에러처리",
+    "createdAt": "2020-01-22 09:18:46",
+    "time": 3,
+    "category": "dev",
+    "userId": "lec"
+  },
+  {
+    "id": "06f3bb7f-06f1-49ae-ad95-013458a569a1",
+    "title": "[PROD-61] 메뉴 및 카테고리 API 개선",
+    "content": "GET mall/:mall_id/menu시 null로 가득찬 group 배열 전송하는 부분 삭제",
+    "createdAt": "2020-01-21 09:32:21",
+    "time": 1,
+    "category": "dev",
+    "userId": "lsy"
+  },
+  {
+    "id": "0a2b5315-a06d-47e9-a61a-74be98f0ee29",
+    "title": "취소사유 기능 관련 문의",
+    "content": "함은수님 문의",
+    "createdAt": "2020-01-22 01:34:40",
+    "time": 1,
+    "category": "request",
+    "userId": "ows"
+  },
+  {
+    "id": "0a9a171f-b80d-478a-b0b4-a5ff8aa5b0e2",
+    "title": "[PROD-33] auto-monthly-point",
+    "content": "코드 포팅 및 테스트",
+    "createdAt": "2020-01-22 10:10:23",
+    "time": 1,
+    "category": "dev",
+    "userId": "lsy"
+  },
+  {
+    "id": "0ae780dd-2222-458f-80ee-049190cd89f5",
+    "title": "주간보고 (COO 김진욱님)",
+    "content": "",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 1,
+    "category": "request",
+    "userId": "lsy"
+  },
+  {
+    "id": "0d67240f-3e43-4a3b-814e-b7e0fa20412a",
+    "title": "[CRM-092] 온라인 전자 계약서",
+    "content": "이메일 선택박스 추가 및 첨부파일 validation 추가",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 2,
+    "category": "dev",
+    "userId": "kjs"
+  },
+  {
+    "id": "0f060b4b-6cd9-4565-afb8-df711dc5b3c7",
+    "title": "[CRM-092] 온라인 전자 계약서",
+    "content": "node_modules를 layer로 배포하는 과정을 자동화하는 방법 리서치",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 2,
+    "category": "dev",
+    "userId": "smk"
+  },
+  {
+    "id": "15880798-6d51-497e-b328-666d9a56036f",
+    "title": "캘리포니아 피차 키친 청량리점 네이버예약 이슈해결 (영업본부장 이지님)",
+    "content": "B2C콘솔에서 네이버가 연동되지 않은 것으로 확인됨",
+    "createdAt": "2020-01-21 09:32:52",
+    "time": 1,
+    "category": "request",
+    "userId": "lsy"
+  },
+  {
+    "id": "1826ea17-1f79-4564-9601-eb774ba8d8a3",
+    "title": "알라프리마, 온지음, 아이오유, 도사 11월 아임포트 결제내역 데이터 추출 (조강희 부사장님)",
+    "content": "",
+    "createdAt": "2020-01-22 07:38:37",
+    "time": 1,
+    "category": "request",
+    "userId": "lsy"
+  },
+  {
+    "id": "1af64cbb-0c71-4792-8f18-f3f7f0d97d9e",
+    "title": "업무보고 프로그램 개발",
+    "content": "React 기반 Front-end 개발 및 이슈처리",
+    "createdAt": "2020-01-21 10:27:42",
+    "time": 4,
+    "category": "dev",
+    "userId": "lec"
+  },
+  {
+    "id": "20e114ac-0271-4ce9-ba33-e8d72ebb3ce9",
+    "title": "Lineworks API 연동 가이드",
+    "content": "",
+    "createdAt": "2020-01-21 09:31:32",
+    "time": 1,
+    "category": "dev",
+    "userId": "lsy"
+  },
+  {
+    "id": "20eb860d-5ede-47b2-938c-ac04d24dde60",
+    "title": "[PROD-34] mytable-reservation-alarm",
+    "content": "Deploy 및 테스트",
+    "createdAt": "2020-01-22 07:37:42",
+    "time": 1,
+    "category": "dev",
+    "userId": "lsy"
+  },
+  {
+    "id": "268a45a0-cb06-42f2-9dcd-de5ebcde1456",
+    "title": "신규 홈페이지 개발 작업 공수 계산",
+    "content": "",
+    "createdAt": "2020-01-21 09:35:49",
+    "time": 1,
+    "category": "request",
+    "userId": "ows"
+  },
+  {
+    "id": "27700cac-0a6e-4642-bc1a-4550825d9b5e",
+    "title": "정산",
+    "content": "서비스 이용료 정산",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 2,
+    "category": "dev",
+    "userId": "kjs"
+  },
+  {
+    "id": "2b1ef436-6777-4daf-862f-5e6504457d6e",
+    "title": "산들해 목동점 고객 엑셀파일 요청 (고객지원팀 김재연님)",
+    "content": "산들해 목동점 엑셀파일 요청",
+    "createdAt": "2020-01-21 09:57:56",
+    "time": 1,
+    "category": "request",
+    "userId": "kdk"
+  },
+  {
+    "id": "2c27d8d9-5a52-4440-b278-cd75ba976715",
+    "title": "CRM 크롤러",
+    "content": "puppeteer 말고 naver api 를 후킹해서 사용하는 코드로 수정",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 2,
+    "category": "dev",
+    "userId": "smk"
+  },
+  {
+    "id": "2d79c88c-5db1-41ba-a1d3-e3385266018d",
+    "title": "app.table.ceo HTTPS 설정",
+    "content": "안드로이드 높은버전에서 HTTP 설정을 지원하지 않아 추가됨",
+    "createdAt": "2020-01-21 09:30:48",
+    "time": 1,
+    "category": "dev",
+    "userId": "lsy"
+  },
+  {
+    "id": "309d6b9a-d24d-4caf-bfbf-f83c459946dd",
+    "title": "Apk-updater 문서화",
+    "content": "코드 정리 및 주석 추가를 진행하였습니다.",
+    "createdAt": "2020-01-22 09:10:56",
+    "time": 2,
+    "category": "dev",
+    "userId": "jwr"
+  },
+  {
+    "id": "31787cca-5899-426a-aa59-1500920c8abf",
+    "title": "정산 로직 수정",
+    "content": "매출전표와 거래명세서에서 일부 매장에 대해 출력되는 방식 변경",
+    "createdAt": "2020-01-21 09:36:50",
+    "time": 3,
+    "category": "dev",
+    "userId": "kjs"
+  },
+  {
+    "id": "31b36cda-c8c1-4483-b308-c16aca1ede1b",
+    "title": "[PROD-32] auto-charge-point",
+    "content": "이메일 통합해서 한번에 보내도록 변경",
+    "createdAt": "2020-01-22 10:10:06",
+    "time": 1,
+    "category": "dev",
+    "userId": "lsy"
+  },
+  {
+    "id": "3642d414-ce57-4fa2-bf18-7ae83ce2ef9d",
+    "title": "전자계약서 prod depoly setting",
+    "content": "",
+    "createdAt": "2020-01-20 07:41:08",
+    "time": 1,
+    "category": "dev",
+    "userId": "lsy"
+  },
+  {
+    "id": "3692bf3d-e763-4dce-9310-51226a20a139",
+    "title": "[CRM-092] 온라인 전자 계약서",
+    "content": "이사님이 볼수 전체 영업팀원들의 계약서를 볼수 있는 기능 추가",
+    "createdAt": "2020-01-22 02:50:12",
+    "time": 2,
+    "category": "dev",
+    "userId": "smk"
+  },
+  {
+    "id": "369aa22d-d273-4005-b98b-794cf14a7d6c",
+    "title": "NICEPAY API 스펙 파악",
+    "content": "",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 1,
+    "category": "dev",
+    "userId": "lsy"
+  },
+  {
+    "id": "37ad1625-3f80-4ad0-a42d-c7f1b8b947cd",
+    "title": "OJT",
+    "content": "신입 OJT (사내 툴 소개 및 사내문화 교육, 솔루션 소개(전략기획) 및 고객사 소개",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 0,
+    "category": "dev",
+    "userId": "lec"
+  },
+  {
+    "id": "38a5ae19-1dcc-46e1-9a49-168dd443919b",
+    "title": "월간면담",
+    "content": "월간 면담(서비스 구조 설명, 주간/월간계획, R&R)",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 0,
+    "category": "dev",
+    "userId": "lec"
+  },
+  {
+    "id": "39b8be72-077e-4d43-8b4c-f48756ceaefd",
+    "title": "Apk-updater",
+    "content": "테이블매니저 앱에 적용",
+    "createdAt": "2020-01-21 09:29:15",
+    "time": 3,
+    "category": "dev",
+    "userId": "jwr"
+  },
+  {
+    "id": "3a0d2bbe-cdc8-4df4-8c24-6e061d1f4772",
+    "title": "[CRM-092] 온라인 전자 계약서",
+    "content": "구글 드라이브 API Attaching 테스트",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 2,
+    "category": "dev",
+    "userId": "kjs"
+  },
+  {
+    "id": "3e9545f0-7b7b-4eb7-b7e8-9ad9a80276d8",
+    "title": "CRM 크롤러",
+    "content": "네이버 API에 알맞은 구조로 DB변경 및 코드 수정",
+    "createdAt": "2020-01-22 09:49:38",
+    "time": 1,
+    "category": "dev",
+    "userId": "smk"
+  },
+  {
+    "id": "403a6709-d66c-4396-8b68-6b29acd2c14c",
+    "title": "이은찬님 OJT안내",
+    "content": "",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 1,
+    "category": "request",
+    "userId": "ows"
+  },
+  {
+    "id": "40aadcf9-e77e-470b-a2e0-b141968d9b59",
+    "title": "마이테이블 챗봇 index blockId 설정",
+    "content": "* 코드 리펙토링 후, 누락된 index파일의 시나리오 blockId가 누락된 것을 재설정 해주었습니다.",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 3,
+    "category": "dev",
+    "userId": "pcy"
+  },
+  {
+    "id": "45cd27ba-0cb7-4341-99a6-8f83a3d05a90",
+    "title": "coupon popular API ",
+    "content": "백엔드 (3)",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 3,
+    "category": "dev",
+    "userId": "kdk"
+  },
+  {
+    "id": "4713fca7-f528-4563-b2f8-6c7ebc5d297d",
+    "title": "B2B 솔루션 깃허브 Branch 정리",
+    "content": "",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 1,
+    "category": "dev",
+    "userId": "ows"
+  },
+  {
+    "id": "47b905d7-4f2c-41e0-bf17-b059c53c29c9",
+    "title": "개발팀 OJT",
+    "content": "B2B 서비스 분석, 개발툴 소개",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 0,
+    "category": "dev",
+    "userId": "lec"
+  },
+  {
+    "id": "4ca419cb-ce44-4482-b4c9-6e025d98c0c1",
+    "title": "WiFi 방문객 관리 리서치",
+    "content": "대표님과 구상중인 \"WiFi 방문객 관리 솔루션\" 관련해서 WifiSupplicant 동작 리서치를 진행하였습니다. (mac 주소 수집 가능 시점 판단)",
+    "createdAt": "2020-01-22 09:12:56",
+    "time": 4,
+    "category": "dev",
+    "userId": "jwr"
+  },
+  {
+    "id": "526635b5-0410-46be-9ae3-e24163f6f41a",
+    "title": "CRM S3 getObject관련 개발 가이드",
+    "content": "",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 1,
+    "category": "dev",
+    "userId": "lsy"
+  },
+  {
+    "id": "5398804f-018c-4dae-9829-7cde24f8b1ae",
+    "title": "[CRM-092] 전자계약서 개발",
+    "content": "LINE WORKS 로 로그인완료 후 메인페이지로 넘어와서 response된 값 client에 저장하기 (line wokrs api 사용하기 위한 기본 세팅)",
+    "createdAt": "2020-01-22 09:21:24",
+    "time": 3,
+    "category": "dev",
+    "userId": "kjs"
+  },
+  {
+    "id": "545b82bd-c14d-4614-8a4f-e147765b81ac",
+    "title": "마이테이블 챗봇 callback approval_url설정",
+    "content": "현재 카카오페이 측 api에 착오가 있어, pg_token이 정상적으로 넘어오지 않고있습니다. 카카오페이 측 수정이 완료된다면 빠르게 작업 가능할 것 같습니다.",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 2,
+    "category": "dev",
+    "userId": "pcy"
+  },
+  {
+    "id": "5504cef9-8c41-4abb-a6b1-e3af298a2b35",
+    "title": "[키움참치 마포점]명절 단체문자 전송 요청 (고객지원팀 문혜인님)",
+    "content": "[키움참치 마포점]명절 단체문자 전송 요청",
+    "createdAt": "2020-01-22 09:22:59",
+    "time": 1,
+    "category": "request",
+    "userId": "kdk"
+  },
+  {
+    "id": "55056d11-8985-4e80-801b-842b25664426",
+    "title": "[PROD-35] reservation-alarm",
+    "content": "코드 포팅 및 테스트",
+    "createdAt": "2020-01-22 07:38:13",
+    "time": 2,
+    "category": "dev",
+    "userId": "lsy"
+  },
+  {
+    "id": "570cf801-142d-414f-a409-ea70230c67a4",
+    "title": "BC 매장 지역 구분 추가(전략기획팀 임창용님)",
+    "content": "",
+    "createdAt": "2020-01-22 07:48:45",
+    "time": 1,
+    "category": "request",
+    "userId": "kjh"
+  },
+  {
+    "id": "5867e018-7f28-4615-a865-5720bd676d3d",
+    "title": "울프강 스테이크 하우스 네이버 연동 진행",
+    "content": "고객지원팀 함은수님",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 1,
+    "category": "request",
+    "userId": "kdk"
+  },
+  {
+    "id": "5a713f66-25e5-4abf-bb11-490dae07e9fe",
+    "title": "CRM 크롤러",
+    "content": "네이버 API를 쓰는 방법으로 변환",
+    "createdAt": "2020-01-21 10:09:23",
+    "time": 2,
+    "category": "dev",
+    "userId": "smk"
+  },
+  {
+    "id": "5d1bc23d-23b4-4b2c-9885-2e03683f7ec5",
+    "title": "대표님이 지시하신 \"WiFi R&D 협약\" 관련 킥오프 미팅 참석",
+    "content": "",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 3,
+    "category": "request",
+    "userId": "jwr"
+  },
+  {
+    "id": "5fe8c171-d19e-4b1f-b66b-93a97a98da67",
+    "title": "젠데스크 comment 고객 정보 관련 추가 개발",
+    "content": "ticket 상세에서 댓글 가져오는 부분\r\n작성자 이름, 휴대폰, 이메일 정보 같이 전송",
+    "createdAt": "2020-01-21 08:54:54",
+    "time": 2,
+    "category": "dev",
+    "userId": "kdk"
+  },
+  {
+    "id": "6077f5e6-d6fc-4166-af41-c07a42ce8e01",
+    "title": "2019-11-01~2019-12-31 맛집엔 BC 예약 현황 요청",
+    "content": "COO 김진욱 이사님",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 1,
+    "category": "request",
+    "userId": "kdk"
+  },
+  {
+    "id": "630a19a9-29f1-4085-a29b-85cc335d0c70",
+    "title": "CRM 크롤러",
+    "content": "request/time 테스트",
+    "createdAt": "2020-01-21 09:21:03",
+    "time": 2,
+    "category": "dev",
+    "userId": "smk"
+  },
+  {
+    "id": "6497c71d-73d0-4983-8895-f6768e2c45b2",
+    "title": "맛집엔 BC 스케쥴 업데이트",
+    "content": "전략기획팀 임창용님",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 1,
+    "category": "request",
+    "userId": "kdk"
+  },
+  {
+    "id": "6774386e-7d77-4a3a-9f6a-982d7a3a62b1",
+    "title": "업무보고 프로그램 개발",
+    "content": "업로드 페이지 tasks 테이블 구현 및 구조화",
+    "createdAt": "2020-01-22 09:19:51",
+    "time": 2,
+    "category": "dev",
+    "userId": "lec"
+  },
+  {
+    "id": "6a5e072a-29bd-48c1-999a-8e5cd67783a6",
+    "title": "[CRM-092] 전자계약서 개발",
+    "content": "카테고리 예약 정책 허용/비허용 시간에 30분단위 추가",
+    "createdAt": "2020-01-22 09:19:28",
+    "time": 1,
+    "category": "dev",
+    "userId": "kjs"
+  },
+  {
+    "id": "6a82d47a-eb50-4b9f-bfb8-6066fbd30cd4",
+    "title": "[PROD-61] 메뉴 및 카테고리 API 개선",
+    "content": "API 호출 시 필요한 값만 쓰게 변경",
+    "createdAt": "2020-01-21 09:33:16",
+    "time": 2,
+    "category": "dev",
+    "userId": "kjh"
+  },
+  {
+    "id": "6ab307bc-5fa2-44a1-a6a9-98c6e052d56e",
+    "title": "[PROD-63] 상세페이지 속도 개선",
+    "content": "상세 페이지 사용하지 않는 부분 제거 ",
+    "createdAt": "2020-01-21 09:34:12",
+    "time": 2,
+    "category": "dev",
+    "userId": "kjh"
+  },
+  {
+    "id": "6d116ad5-b3cb-4c82-af29-aa8f85ce34ba",
+    "title": "마이테이블 문자 발송 워커 테스트 (\\w 이상엽팀장님)",
+    "content": "마이테이블 문자발송 워커 lambda 이전 관련 테스트",
+    "createdAt": "2020-01-21 10:01:07",
+    "time": 1,
+    "category": "dev",
+    "userId": "kdk"
+  },
+  {
+    "id": "6d4c626d-4a09-4a5e-a570-5ecd36ed4b36",
+    "title": "QA리스트 작성 및 QA 진행",
+    "content": "",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 3,
+    "category": "dev",
+    "userId": "ows"
+  },
+  {
+    "id": "6d7e8918-be2a-4b0c-9d6c-95da02be99fb",
+    "title": "마이테이블 챗봇 callback을 위한 AVL 설정(요청)",
+    "content": "*생체 비밀번호 인증 후 결제가 진행되지 않는 현상을 문의해보니, callback ACL  관련 설정을 해주지 않아 발생하지 않았었습니다. 현재 카카오페이 측 문의드린 상태입니다.",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 3,
+    "category": "dev",
+    "userId": "pcy"
+  },
+  {
+    "id": "72e71193-8b5b-4992-8759-06ef8753e0fa",
+    "title": "몽고디비 연동 및 데이터 추출",
+    "content": "추후 cs작업을 대비하여, 카카오페이 측 회신이 오길 기다리는 동안 작업했습니다.",
+    "createdAt": "2020-01-21 09:55:26",
+    "time": 2,
+    "category": "dev",
+    "userId": "pcy"
+  },
+  {
+    "id": "743b147d-05d8-4baa-9818-31b5b942daaa",
+    "title": "LINE WORKS API",
+    "content": "전자계약서 관련 파일들을 line works의 드라이브에 넣어주기 위해 line works의 api 리서치 및 개발",
+    "createdAt": "2020-01-21 09:44:29",
+    "time": 3,
+    "category": "dev",
+    "userId": "kjs"
+  },
+  {
+    "id": "7614f412-6670-4d18-95c2-a912d43a2781",
+    "title": "[B2B-225] 문의하기 게시판 2차 개발 건",
+    "content": "* 백엔드 추가 작업 요청 내용 정리",
+    "createdAt": "2020-01-21 09:37:09",
+    "time": 1,
+    "category": "dev",
+    "userId": "ows"
+  },
+  {
+    "id": "76bdd55c-de36-40da-a94f-29b091ef575c",
+    "title": "쉐프의밥 네이버예약 이슈 해결 (고객지원팀 함은수님)",
+    "content": "매장에서 마음대로 상품을 생성해버려서 꼬인것으로 파악됨",
+    "createdAt": "2020-01-21 09:32:41",
+    "time": 1,
+    "category": "request",
+    "userId": "lsy"
+  },
+  {
+    "id": "7b23067a-1607-4016-bb0d-fbd2460e32db",
+    "title": "[CRM-092] 온라인 전자 계약서",
+    "content": "구글 드라이브 API 리서치",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 1,
+    "category": "dev",
+    "userId": "kjs"
+  },
+  {
+    "id": "7c47c44e-3480-4d07-aead-c1de17573b39",
+    "title": "point log 관련 로그 수정 (이상엽팀장님)",
+    "content": "point로그 관련 개발 및 테스트",
+    "createdAt": "2020-01-22 09:23:47",
+    "time": 1,
+    "category": "dev",
+    "userId": "kdk"
+  },
+  {
+    "id": "8018ce4e-c44b-41c7-be63-5dac04cb1c4f",
+    "title": "마이테이블 챗봇 원클릭 결제 pg_token 받아오기",
+    "content": "카카오페이측 api수정이 완료되어, 현재 생체비밀번호 인증 후 날라오는 callback pg_token을 받아옴. 그것이 가지고 기존의 결제 승인 api를 호출하면 결제가 완료됨. 그런데 결제 승인 api 호출 시 오류가 나는 현상을 카카오측과 같이 해결해보고자 함.",
+    "createdAt": "2020-01-22 09:20:24",
+    "time": 8,
+    "category": "dev",
+    "userId": "pcy"
+  },
+  {
+    "id": "801ad3fc-ac63-49c5-a3d7-78e3e2a2167f",
+    "title": "TaskManager",
+    "content": "이은찬님 프론트 코드리뷰",
+    "createdAt": "2020-01-22 08:18:23",
+    "time": 1,
+    "category": "dev",
+    "userId": "smk"
+  },
+  {
+    "id": "813800ec-03bf-4b77-8efc-fd252e9d00d0",
+    "title": "앱 개선",
+    "content": "HTTPS 지원",
+    "createdAt": "2020-01-21 09:30:24",
+    "time": 1,
+    "category": "dev",
+    "userId": "jwr"
+  },
+  {
+    "id": "8160bd7c-2877-47c9-8eff-64d106f03abb",
+    "title": "apk-updater 라이브러리로 빌드",
+    "content": "",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 1,
+    "category": "dev",
+    "userId": "jwr"
+  },
+  {
+    "id": "83cd56bb-91a5-42dd-9a45-cb5235ebd4e8",
+    "title": "[PROD-32] auto-charge-point",
+    "content": "코드 포팅 및 테스트",
+    "createdAt": "2020-01-22 07:39:25",
+    "time": 2,
+    "category": "dev",
+    "userId": "lsy"
+  },
+  {
+    "id": "840eaf6a-d490-4563-843e-77cb77ab8c7a",
+    "title": "반포리체 원격 [동, 호수 엑셀] (고객지원팀 문혜인님)",
+    "content": "반포리체 조식 원격 요청",
+    "createdAt": "2020-01-22 09:21:08",
+    "time": 1,
+    "category": "request",
+    "userId": "kdk"
+  },
+  {
+    "id": "8c05fe3c-f8f8-43e1-aa22-3c3dcf0ec1ac",
+    "title": "업무환경 설정",
+    "content": "Python, tensorflow 환경설정 및 리서치 및 리서치",
+    "createdAt": "2020-01-21 10:26:09",
+    "time": 2,
+    "category": "dev",
+    "userId": "lec"
+  },
+  {
+    "id": "8cb99e59-de32-4886-b95e-20779e704472",
+    "title": "[B2B-225] 문의하기 게시판 2차 개발 건",
+    "content": "* 상세페이지 HTML, CSS 작업",
+    "createdAt": "2020-01-21 09:33:07",
+    "time": 4,
+    "category": "dev",
+    "userId": "ows"
+  },
+  {
+    "id": "8cfb067b-36b1-439b-b044-f3505ff9e12e",
+    "title": "SMT 전 매장 임직원 제외 총 고객 수 요청",
+    "content": "고객지원팀 김재연님",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 1,
+    "category": "request",
+    "userId": "kdk"
+  },
+  {
+    "id": "916522be-97e3-4de4-9169-1b2e68c03a33",
+    "title": "BC 예약 현황 페이지 개발 요청 (\\w coo 김진욱이사님)",
+    "content": "BC 예약 상세 페이지 관련 페이지 개발",
+    "createdAt": "2020-01-21 08:54:54",
+    "time": 3,
+    "category": "dev",
+    "userId": "kdk"
+  },
+  {
+    "id": "9296b319-998e-47d5-ad35-5a84e2690221",
+    "title": "워크플레이스 세팅",
+    "content": "",
+    "createdAt": "2020-01-21 09:35:07",
+    "time": 1,
+    "category": "dev",
+    "userId": "ows"
+  },
+  {
+    "id": "969e3c37-72d3-40b9-ae5b-503b433dc6d2",
+    "title": "BC-STATISTICS 기능 개발",
+    "content": "김진욱 이사님이 요청하신 최근 6개월 동안의 BC 예약 현황 페이지 개발",
+    "createdAt": "2020-01-22 09:17:51",
+    "time": 4,
+    "category": "dev",
+    "userId": "kdk"
+  },
+  {
+    "id": "970cdffc-ae77-405f-b8fa-672b226c8a2b",
+    "title": "정보 추가",
+    "content": "사업자등록번호, 사업자명 정보들 DB에 추가 (경영혁신팀 박준오님)",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 1,
+    "category": "request",
+    "userId": "kjs"
+  },
+  {
+    "id": "9c522a05-8d04-4274-a288-5b30c3e64467",
+    "title": "[PROD-62] 메뉴 및 카테고리 표현 로직 개선",
+    "content": "메뉴 API 호출하지 않고 기존 localStorage 활용하게 변경",
+    "createdAt": "2020-01-21 09:32:32",
+    "time": 4,
+    "category": "dev",
+    "userId": "kjh"
+  },
+  {
+    "id": "9de15b22-acfa-4c63-9fbf-241ae2c26510",
+    "title": "Task 정리 미팅 (전략기획팀 김다희님)",
+    "content": "",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 1,
+    "category": "request",
+    "userId": "lsy"
+  },
+  {
+    "id": "a5c3c862-d493-4e41-abca-f7bead289b39",
+    "title": "[이슈파악] 애프터눈안경원 - 온라인예약설정 부분, 저장이 안된다는 CS",
+    "content": "내부 테스트 결과 정상동작하여, 원격제어 요청하였음 (함은수님)",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 1,
+    "category": "request",
+    "userId": "ows"
+  },
+  {
+    "id": "a7714184-046d-41fd-9242-130b00922f33",
+    "title": "[CRM-092] 온라인 전자 계약서",
+    "content": "production 서버에서 계약서  저장이 pending되는 오류수정",
+    "createdAt": "2020-01-22 08:17:33",
+    "time": 3,
+    "category": "dev",
+    "userId": "smk"
+  },
+  {
+    "id": "aa929a1a-d4a1-405b-9a4b-1c8e1b86406b",
+    "title": "login api bug patch",
+    "content": "login api bug patch",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 1,
+    "category": "dev",
+    "userId": "kdk"
+  },
+  {
+    "id": "aaf48f00-0784-47dc-a729-360063b838c1",
+    "title": "앱 개선",
+    "content": "AndroidX로 마이그레이션",
+    "createdAt": "2020-01-21 09:30:37",
+    "time": 3,
+    "category": "dev",
+    "userId": "jwr"
+  },
+  {
+    "id": "ab62cb21-6c59-4d76-850e-247a25dc8e69",
+    "title": "[B2C] 예약 생성 메시지에 menu추가",
+    "content": "",
+    "createdAt": "2020-01-21 10:27:23",
+    "time": 1,
+    "category": "dev",
+    "userId": "lsy"
+  },
+  {
+    "id": "ab92fcc4-6747-4895-8e0d-bb3ba497cafc",
+    "title": "[B2B-225] 문의하기 게시판 2차 개발 건",
+    "content": "* 답변자, 질문자 구분 및 정보 표기 작업",
+    "createdAt": "2020-01-21 09:34:46",
+    "time": 1,
+    "category": "dev",
+    "userId": "ows"
+  },
+  {
+    "id": "ade3b80c-2252-4f71-883c-f99089ffe943",
+    "title": "테이블매니저 안드로이드 업데이트 준비",
+    "content": "기획팀에 APK 파일을 전달하였고, UX 피드백을 받는 즉시 업데이트 할 수 있도록 준비 작업을 진행하였습니다",
+    "createdAt": "2020-01-22 09:10:32",
+    "time": 2,
+    "category": "dev",
+    "userId": "jwr"
+  },
+  {
+    "id": "aebb8884-1eef-495f-af59-ff234c0186ee",
+    "title": "[B2B-225] 문의하기 게시판 2차 개발 건",
+    "content": "* 재문의내역 영역 찾는 코드 추가 및 HTML, CSS 작업 *첨부파일쪽 CSS개선",
+    "createdAt": "2020-01-22 10:11:04",
+    "time": 3,
+    "category": "dev",
+    "userId": "ows"
+  },
+  {
+    "id": "af3a0ed7-e010-4a20-ae05-c779dce29c8a",
+    "title": "테이블매니저 업데이트 레포 셋업",
+    "content": "",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 2,
+    "category": "dev",
+    "userId": "jwr"
+  },
+  {
+    "id": "b0e50d85-70f2-4a69-b029-93356eefd50b",
+    "title": "CRM 크롤러",
+    "content": "시간당 보낼수 있는 요청의 개수 및 에러 발생시 다시 요청가능한 시간 테스트",
+    "createdAt": "2020-01-22 09:49:05",
+    "time": 1,
+    "category": "dev",
+    "userId": "smk"
+  },
+  {
+    "id": "b79f02b1-aac4-4efb-b84e-2f3e0693f55b",
+    "title": "울프강 스테이크 하우스 문자 발송 대상 고객 데이터 요청",
+    "content": "고객지원팀 함은수님",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 1,
+    "category": "request",
+    "userId": "kdk"
+  },
+  {
+    "id": "b7f987bf-cc73-439f-9393-fc0cbbe8478e",
+    "title": "[CRM-092] 온라인 전자 계약서",
+    "content": "배포를 위한 env설정",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 3,
+    "category": "dev",
+    "userId": "smk"
+  },
+  {
+    "id": "b813d305-9cb6-4622-99ec-1221db161686",
+    "title": "task manager",
+    "content": "백엔드 개발",
+    "createdAt": "2020-01-21 08:54:54",
+    "time": 4,
+    "category": "dev",
+    "userId": "smk"
+  },
+  {
+    "id": "b9b88aa7-52e7-4a5a-bf04-b059e9171e7a",
+    "title": "app.table.ceo HTTPS 지원",
+    "content": "내부에서 HTTP 통신하는 부분 수정",
+    "createdAt": "2020-01-21 09:31:23",
+    "time": 1,
+    "category": "dev",
+    "userId": "lsy"
+  },
+  {
+    "id": "badbc22c-f06c-47f6-a482-96a640404c06",
+    "title": "[PROD-63] 상세페이지 속도 개선",
+    "content": "- 메뉴, 방 세팅 테스트",
+    "createdAt": "2020-01-22 09:20:34",
+    "time": 4,
+    "category": "dev",
+    "userId": "kjh"
+  },
+  {
+    "id": "c2acbdbf-cf56-4280-9243-e78696d1685f",
+    "title": "Apk-updater",
+    "content": "테스트 Apk 뽑아서 기획에 전달",
+    "createdAt": "2020-01-21 09:30:04",
+    "time": 1,
+    "category": "dev",
+    "userId": "jwr"
+  },
+  {
+    "id": "c3ff0c43-2eba-44e3-b70a-3c806a605be3",
+    "title": "SMT 문자 발송 (고객지원팀 문혜원님)",
+    "content": "SMT 임직원 이외 대상 문자 발송요청\r\n3281명 대상 발송 완료",
+    "createdAt": "2020-01-21 08:54:54",
+    "time": 1,
+    "category": "request",
+    "userId": "kdk"
+  },
+  {
+    "id": "c473a6f7-80e7-4031-81f3-ab7ea33c6f1b",
+    "title": "apk-updater를 테이블매니저 앱에 연동",
+    "content": "",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 1,
+    "category": "dev",
+    "userId": "jwr"
+  },
+  {
+    "id": "c8f35c5e-2f10-412e-bbe0-b55c3819128d",
+    "title": "마이테이블 챗봇 callback pg_token받아오기",
+    "content": "kakaoPay측에서 우리  api로 call을 하는데, pg_token이 넘어오지않아 카카오페이를 종료시킬 수 없었던 이슈 원인파악 및 수정하였습니다. 이후 카카오페이측 회신이 오면 나머지 개발 완료할 예정입니다. 현재 원클릭 결제 90%완료입니다.",
+    "createdAt": "2020-01-21 09:49:41",
+    "time": 6,
+    "category": "dev",
+    "userId": "pcy"
+  },
+  {
+    "id": "cbde677f-8ace-4c78-a67d-2f24adfb554e",
+    "title": "OJT 및 월간 면담 - 이은찬님",
+    "content": "",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 1,
+    "category": "request",
+    "userId": "lsy"
+  },
+  {
+    "id": "d149cbd1-8f3a-4456-beb5-44451a71f9a4",
+    "title": "B2C 음식종류 오마카세 추가",
+    "content": "고객지원팀 김재연님",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 1,
+    "category": "request",
+    "userId": "kdk"
+  },
+  {
+    "id": "d8b0072c-5046-42c1-931d-52f1bc127c66",
+    "title": "[CRM-092] 전자계약서 개발",
+    "content": "config 내용 수정 및 validation 확인하는 로직 수정",
+    "createdAt": "2020-01-21 09:35:15",
+    "time": 2,
+    "category": "dev",
+    "userId": "kjs"
+  },
+  {
+    "id": "da3355fa-2ad8-465b-88d9-6aaa43455a5e",
+    "title": "[원격제어] 해담채 삼성점 DID 이슈",
+    "content": "현재 2페이지로 나뉘어져 있는 예약건이 예전에는 1페이지에 다 보였다고 하심. *현재는 예약건이 2줄로 출력 되었을때 발생하는 이슈를 감안하여 너비 부분이 수정되어 있으며, 한페이지에 꽉차면 다음페이지로 롤링되게끔 의도하여 만들어진 부분임을 설명드리고, 글자 크기 및 브라우저 크기를 확대/축소를 통해 조절하여 사용할 수 있음을 안내함. *글자 크기 조절해서 사용하겠다며 원격제어를 종료하겠다고 하시어 해단건 종결하였음 (함은수님)",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 1,
+    "category": "request",
+    "userId": "ows"
+  },
+  {
+    "id": "e1b2cdca-139f-4a10-a05d-5afef33ec560",
+    "title": "탑클라우드 삼성점 맴버십 정보 삭제 (고객지원팀 김재연님)",
+    "content": "",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 1,
+    "category": "request",
+    "userId": "kdk"
+  },
+  {
+    "id": "e4d9f55a-d303-47cb-b048-d0563cf40575",
+    "title": "DB 분석 및 데이터 추출",
+    "content": "mongodb 분석 및 사용, RFM용 메타데이터 추출",
+    "createdAt": "2020-01-21 10:27:04",
+    "time": 2,
+    "category": "dev",
+    "userId": "lec"
+  },
+  {
+    "id": "e56d2f18-8426-449f-ae1a-12853e419b60",
+    "title": "개발팀 OJT",
+    "content": "사내 툴, 개발환경 세팅(Robo3T, PuTTY, VSCode, Jira, 개발서버)",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 0,
+    "category": "dev",
+    "userId": "lec"
+  },
+  {
+    "id": "e60fc06f-e74b-4604-b341-60a3aaadda50",
+    "title": "1월 2주차 카드사용내역보고 (경영혁신팀)",
+    "content": "",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 1,
+    "category": "request",
+    "userId": "lsy"
+  },
+  {
+    "id": "e7f3b7c2-750f-4896-b83d-2dc08f8163a7",
+    "title": "고매렘 단체쿠폰발송 (고객지원팀 문혜인님)",
+    "content": "고메램 단체 쿠폰 발송요청",
+    "createdAt": "2020-01-22 09:19:32",
+    "time": 1,
+    "category": "request",
+    "userId": "kdk"
+  },
+  {
+    "id": "ed316e37-b2a4-4255-9d10-7c9926912633",
+    "title": "- [PROD-63] 상세페이지 속도 개선",
+    "content": "*상세페이지 테이블 변경 * 기존 작업 사항 병합 [상세 페이지 UI/UX 개선]",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 8,
+    "category": "dev",
+    "userId": "kjh"
+  },
+  {
+    "id": "f1b2ff1f-8979-4c84-9d03-f363814bcd14",
+    "title": "경복궁 목동점 고객에게 간 문자의 하이퍼 링크범위가 이상하다는 이슈",
+    "content": "구형 휴대폰 이슈로 확인됨 고객지원팀 문혜원님",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 1,
+    "category": "request",
+    "userId": "kdk"
+  },
+  {
+    "id": "f21e9bf8-ed0a-4b46-af3d-276ce0cf2129",
+    "title": "Lambda Login 이전 및 서버사이드 후커 재실행 코드리뷰",
+    "content": "",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 1,
+    "category": "dev",
+    "userId": "lsy"
+  },
+  {
+    "id": "f3e1335f-edaf-4b67-9fce-54aa90ccbbc5",
+    "title": "[CRM-092] 온라인 전자 계약서",
+    "content": "배포 후 테스트 및 수정",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 1,
+    "category": "dev",
+    "userId": "smk"
+  },
+  {
+    "id": "f4452e9e-2193-4a66-a4ce-5ef056d57a86",
+    "title": "naver-booking-cron",
+    "content": "OUT_OF_STOCK 시 처리 후 결과 반영하지 않고 남아있는 이슈 해결 ",
+    "createdAt": "2020-01-21 09:31:50",
+    "time": 1,
+    "category": "dev",
+    "userId": "lsy"
+  },
+  {
+    "id": "f4452e9e-2193-4a66-a4ce-5ef056d57a87",
+    "title": "온라인예약설정 저장이 안되는 이슈 (애프터눈안경원)",
+    "content": "원격제어로 확인해봤으나, 정상적으로 동작하여 추후 문제 발생시 재문의 주시기로 하였음 (함은수님)",
+    "createdAt": "2020-01-22 09:50:29",
+    "time": 1,
+    "category": "request",
+    "userId": "ows"
+  },
+  {
+    "id": "f4452e9e-2193-4a66-a4ce-5ef056d57a88",
+    "title": "Zendesk 만족도 알림 설정 및 행아웃 봇 생성",
+    "content": "김진욱 이사님",
+    "createdAt": "2020-01-22 09:50:29",
+    "time": 1,
+    "category": "request",
+    "userId": "ows"
+  },
+  {
+    "id": "f4452e9e-2193-4a66-a4ce-5ef056d57a89",
+    "title": "네이버 예약 매장 생성 4건",
+    "content": "송채겸님",
+    "createdAt": "2020-01-22 09:50:29",
+    "time": 1,
+    "category": "request",
+    "userId": "ows"
+  },
+  {
+    "id": "f5db1c16-236b-4096-9ee1-a7bed4a0f80f",
+    "title": "[PTN-027] 어반딜라이트 추가 요청건 작업, QA테스트 중 이슈 수정",
+    "content": "*번역 안된 부분 추가 수정 *CSS 수정: width 반응형 추가 대응 *빠져 있는 단어 번역 DB에 입력 (영업시간쪽 요일 EN단어 DB에 입력)",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 2,
+    "category": "dev",
+    "userId": "ows"
+  },
+  {
+    "id": "fcd8a408-c516-4682-9fcb-ce07f2ec3817",
+    "title": "업무보고 프로그램 개발",
+    "content": "임시 주간보고 페이지 제작 및 UI 디자인 테스트",
+    "createdAt": "2020-01-22 09:20:35",
+    "time": 1,
+    "category": "dev",
+    "userId": "lec"
+  },
+  {
+    "id": "fe3cc0e0-e846-4b86-937a-897b0fa82c91",
+    "title": "업무보고 프로그램 개발",
+    "content": "날짜목록 페이지 개발",
+    "createdAt": "2020-01-22 09:14:39",
+    "time": 2,
+    "category": "dev",
+    "userId": "lec"
+  },
+  {
+    "id": "fe6d4c6f-c121-4f7a-9b54-a2bdf5b1b827",
+    "title": "마이테이블 개인 고객 탈퇴요청 (고객지원팀 문혜인님)",
+    "content": "마이테이블 개인 고객 탈퇴요청 선한정식",
+    "createdAt": "2020-01-22 09:21:41",
+    "time": 1,
+    "category": "request",
+    "userId": "kdk"
+  },
+  {
+    "id": "fefab542-7c60-4a82-8f2a-b1c7059b56ca",
+    "title": "OJT",
+    "content": "신입 OJT (사내 툴 소개 및 사내문화 교육, 솔루션 소개(전략기획) 및 고객사 소개",
+    "createdAt": "2020-01-20 09:50:29",
+    "time": 0,
+    "category": "dev",
+    "userId": "lec"
+  }
+]
