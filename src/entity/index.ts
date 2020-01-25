@@ -1,15 +1,13 @@
-import { WeeklyPlan } from './plan';
 import { Project } from './project';
-import { Task, Bug } from './task';
+import { Task } from './task';
 import { Team } from './team';
 import { User } from './user';
-import { Development, DevelopmentHelp, Deploy, Request, Bugfix, Schedule } from './work';
+import { Ticket } from './ticket';
 
 export {
-  WeeklyPlan,
   Project,
-  Task, Bug,
+  Task,
   Team,
   User,
-  Development, DevelopmentHelp, Deploy, Request, Bugfix, Schedule,
+  Ticket,
 };

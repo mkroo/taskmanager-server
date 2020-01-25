@@ -1,5 +1,4 @@
-import { BaseEntity, PrimaryColumn, Column, OneToMany, CreateDateColumn } from 'typeorm';
-import { Task } from './task';
+import { BaseEntity, PrimaryColumn, Column, CreateDateColumn } from 'typeorm';
 
 export class Project extends BaseEntity {
   @PrimaryColumn()
@@ -9,8 +8,8 @@ export class Project extends BaseEntity {
   public name!: string;
 
   @Column({ type: 'varchar', length: 1024, nullable: true })
-  public description: string = '';
+  public description!: string;
 
   @CreateDateColumn()
-  public createdAt!: Date;
+  readonly createdAt!: Date;
 }
