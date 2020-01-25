@@ -24,6 +24,7 @@
     "class-validator": "^0.11.0",
     "graphql": "^14.5.8",
     "jsonwebtoken": "^8.5.1",
+    "middy": "^0.33.2",
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.27",
     "reflect-metadata": "^0.1.13",

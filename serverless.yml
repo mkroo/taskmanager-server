@@ -1,0 +1,108 @@
+service:
+  name: tm-contract-serverless
+
+plugins:
+  - serverless-plugin-typescript
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  region: ap-northeast-2
+  stage: ${opt:stage, 'dev'}
+  apiGateway:
+    minimumCompressionSize: 1024 # Enable gzip compression for responses > 1 KB
+  environment:
+    AWS_NODEJS_CONNECTION_REUSE_ENABLED: 1
+    NODE_ENV: local
+    MYSQL_HOST: tm-new.c5itfod3ti8q.ap-northeast-2.rds.amazonaws.com
+    MYSQL_USERNAME: admin
+    MYSQL_PASSWORD: 12341234
+    MYSQL_DATABASE: task-manager-v2
+    JWT_SECRET: qnjvfdWQJvfujqwM
+
+functions:
+  login:
+    handler: handler.login
+    events:
+      - http:
+          cors: true
+          method: POST
+          path: /auth/login
+  addProject:
+    handler: handler.addProject
+    events:
+      - http:
+          cors: true
+          method: POST
+          path: /projects
+  getProjects:
+    handler: handler.getProjects
+    events:
+      - http:
+          cors: true
+          method: GET
+          path: /projects
+  addTask:
+    handler: handler.addTask
+    events:
+      - http:
+          cors: true
+          method: POST
+          path: /tasks
+  deleteTask:
+    handler: handler.deleteTask
+    events:
+      - http:
+          cors: true
+          method: DELETE
+          path: /tasks/{taskId}
+  getTasks:
+    handler: handler.getTasks
+    events:
+      - http:
+          cors: true
+          method: GET
+          path: /tasks
+  addTicket:
+    handler: handler.addTicket
+    events:
+      - http:
+          cors: true
+          method: POST
+          path: /tickets
+  closeTicket:
+    handler: handler.closeTikcet
+    events:
+      - http:
+          cors: true
+          method: POST
+          path: /tickets/{ticketId}/close
+  getTicket:
+    handler: handler.getTicket
+    events:
+      - http:
+          cors: true
+          method: GET
+          path: /tickets/{ticketId}
+  getTickets:
+    handler: handler.getTickets
+    events:
+      - http:
+          cors: true
+          method: GET
+          path: /tickets
+  addTeamMembers:
+    handler: handler.addTeamMembers
+    events:
+      - http:
+          cors: true
+          method: POST
+          path: /users
+  getTeamMembers:
+    handler: handler.getTeamMembers
+    events:
+      - http:
+          cors: true
+          method: GET
+          path: /teams/{teamId}/users
