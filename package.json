@@ -7,6 +7,8 @@
     "@types/bcryptjs": "^2.4.2",
     "@types/graphql": "^14.5.0",
     "@types/jsonwebtoken": "^8.3.5",
+    "@types/moment": "^2.13.0",
+    "@types/moment-timezone": "^0.5.12",
     "@types/node": "^13.1.6",
     "serverless": "^1.60.5",
     "serverless-offline": "^5.12.1",
@@ -22,6 +24,8 @@
     "class-validator": "^0.11.0",
     "graphql": "^14.5.8",
     "jsonwebtoken": "^8.5.1",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.27",
     "reflect-metadata": "^0.1.13",
     "type-graphql": "^0.17.6",
     "typeorm": "^0.2.22"

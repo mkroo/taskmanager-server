@@ -39,6 +39,30 @@ export const authenticate = async (headers: Headers): Promise<User> => {
   return user;
 };
 
+export const headersToPayload = (headers: Headers): Payload => {
+  const { Authorization } = headers;
+  if (!Authorization) {
+    throw new Error('AUTHORIZETION_REQUIRED');
+  }
+  const [tokenType, token] = Authorization.split(' ');
+  if (tokenType !== 'Bearer') {
+    throw new Error('INVALID_TOKEN_TYPE');
+  }
+  if (!secret) {
+    throw new Error('JWT_SECRET_REQUIRED');
+  }
+  if (!issuer) {
+    throw new Error('JWT_ISSUER_REQUIRED');
+  }
+  let payload: Payload;
+  try {
+    payload = verify(token, secret, { issuer }) as Payload;
+  } catch (err) {
+    throw new Error('JWT_TOKEN_EXPIRED');
+  }
+  return payload;
+};
+
 export const generateAccessToken = (payload: Payload) => {
   if (!secret) {
     throw new ApolloError('JWT_SECRET_REQUIRED');
