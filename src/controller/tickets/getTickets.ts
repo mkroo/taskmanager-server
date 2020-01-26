@@ -1,7 +1,7 @@
 import { APIGatewayProxyHandler } from 'aws-lambda';
 import { Ticket } from '../../entity';
 import { success } from '../../util';
-import { LessThan, MoreThan } from 'typeorm';
+import { IsNull, Not } from 'typeorm';
 
 export const getTickets: APIGatewayProxyHandler = async (event) => {
   const { queryStringParameters } = event;
@@ -14,7 +14,7 @@ export const getTickets: APIGatewayProxyHandler = async (event) => {
   }
   const tickets = await Ticket.find({
     where: {
-      closedAt: close ? MoreThan(new Date()) : LessThan(new Date()),
+      closedAt: close ? Not(IsNull()) : IsNull(),
     },
   });
   return success({ tickets });

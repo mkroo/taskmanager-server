@@ -1,5 +1,6 @@
-import { BaseEntity, PrimaryColumn, Column, CreateDateColumn } from 'typeorm';
+import { BaseEntity, PrimaryColumn, Column, CreateDateColumn, Entity } from 'typeorm';
 
+@Entity()
 export class Project extends BaseEntity {
   @PrimaryColumn()
   public id!: string;

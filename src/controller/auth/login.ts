@@ -14,7 +14,7 @@ export const login: APIGatewayProxyHandler = async (event) => {
   if (!user) {
     return error('NOT_FOUND', 'USER_NOT_FOUND');
   }
-  if (user.comparePassword(password)) {
+  if (!user.comparePassword(password)) {
     return error('BAD_REQUEST', 'INVALID_PASSWORD');
   }
   const accessToken = await user.createAccessToken();

@@ -5,7 +5,7 @@ import { error, success } from '../../util';
 
 interface Body {
   content: string;
-  woringTime: number;
+  workingTime: number;
   ticketId: string;
 }
 export const addTask: APIGatewayProxyHandler = async (event) => {
@@ -19,14 +19,15 @@ export const addTask: APIGatewayProxyHandler = async (event) => {
     return error('BAD_REQUEST', err);
   }
 
-  const { content, woringTime, ticketId } = body as unknown as Body;
+  const { content, workingTime, ticketId } = body as unknown as Body;
   const ticket = await Ticket.findOne(ticketId);
   if (!ticket) {
     return error('NOT_FOUND', 'TICKET_NOT_FOUND');
   }
+
   const task = new Task();
   task.content = content;
-  task.workingTime = woringTime;
+  task.workingTime = workingTime;
   task.ticket = ticket;
   task.user = user;
   await task.save();

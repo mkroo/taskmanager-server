@@ -1,5 +1,6 @@
 import { ConnectionManager, Connection, getConnectionManager, createConnection } from 'typeorm';
 import * as entityObject from '../entity';
+import 'reflect-metadata';
 
 const {
   MYSQL_HOST,

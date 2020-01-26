@@ -18,8 +18,9 @@ provider:
     MYSQL_HOST: tm-new.c5itfod3ti8q.ap-northeast-2.rds.amazonaws.com
     MYSQL_USERNAME: admin
     MYSQL_PASSWORD: 12341234
-    MYSQL_DATABASE: task-manager-v2
+    MYSQL_DATABASE: taskmanager
     JWT_SECRET: qnjvfdWQJvfujqwM
+    JWT_ISSUER: task.tablemanager.io
 
 functions:
   login:
@@ -92,8 +93,8 @@ functions:
           cors: true
           method: GET
           path: /tickets
-  addTeamMembers:
-    handler: handler.addTeamMembers
+  addTeamMember:
+    handler: handler.addTeamMember
     events:
       - http:
           cors: true

@@ -21,7 +21,7 @@ export class User extends BaseEntity {
     this.encryptPassword = hashSync(rawPassword);
   }
   public comparePassword(rawPassword: string) {
-    return compareSync(rawPassword, this.password);
+    return compareSync(rawPassword, this.encryptPassword);
   }
 
   @Column()

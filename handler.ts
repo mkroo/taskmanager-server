@@ -1,4 +1,3 @@
-import 'reflect-metadata';
 import { funcToHandler } from './src/util';
 
 import * as Auth from './src/controller/auth';
