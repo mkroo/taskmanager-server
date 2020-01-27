@@ -27,7 +27,7 @@ export const getTasks: APIGatewayProxyHandler = async (event) => {
     from = moment(fromQuery).tz('Asia/Seoul').startOf('date').toDate();
     to = moment(toQuery).tz('Asia/Seoul').endOf('date').toDate();
   }
-  
+
   where.createdAt = Between(from, to);
   const relations = ['user', 'ticket'];
   const tasks = await Task.find({ where, relations });
