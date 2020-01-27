@@ -16,6 +16,7 @@ export const getTickets: APIGatewayProxyHandler = async (event) => {
     where: {
       closedAt: close ? Not(IsNull()) : IsNull(),
     },
+    relations: ['project'],
   });
   return success({ tickets });
 };

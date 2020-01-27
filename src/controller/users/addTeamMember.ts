@@ -15,6 +15,10 @@ export const addTeamMember: APIGatewayProxyHandler = async (event) => {
   if (!team) {
     return error('NOT_FOUND', 'TEAM_NOT_FOUND');
   }
+  const exUser = await User.findOne({ where: { email } });
+  if (exUser) {
+    return error('BAD_REQUEST', 'USER_EXIST');
+  }
   const user = new User();
   user.id = email.split('@')[0];
   user.name = name;

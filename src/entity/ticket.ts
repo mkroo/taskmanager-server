@@ -32,14 +32,4 @@ export class Ticket extends BaseEntity {
 
   @ManyToOne(type => Project)
   public project!: Project;
-
-  @BeforeInsert()
-  async setId() {
-    // TODO: 정상 작동하는지 확인
-    const tickets = await Ticket.find({
-      where: { project: this.project },
-    });
-    const projectId = this.project.id;
-    this.id = `${projectId}-${tickets.length + 1}`;
-  }
 }
