@@ -31,8 +31,8 @@ export const addTicket: APIGatewayProxyHandler = async (event) => {
   });
   const ticketIds = exTickets
     .map(ticket => parseInt(ticket.id.split('-')[1], 10))
-    .sort((a, b) => a - b);
-  const newId = ticketIds.length === 0 ? 1 : ticketIds[0];
+    .sort((a, b) => b - a);
+  const newId = ticketIds.length === 0 ? 1 : ticketIds[0] + 1;
   const ticket = new Ticket();
   ticket.name = name;
   ticket.priority = priority;
