@@ -70,6 +70,6 @@ export const generateAccessToken = (payload: Payload) => {
   if (!issuer) {
     throw new ApolloError('JWT_ISSUER_REQUIRED');
   }
-  const token = sign(payload, secret, { issuer, expiresIn: '1d' });
+  const token = sign(payload, secret, { issuer, expiresIn: '30d' });
   return token;
 };
