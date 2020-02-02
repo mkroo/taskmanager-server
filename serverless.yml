@@ -73,11 +73,11 @@ functions:
           method: POST
           path: /tickets
   closeTicket:
-    handler: handler.closeTikcet
+    handler: handler.closeTicket
     events:
       - http:
           cors: true
-          method: POST
+          method: PATCH
           path: /tickets/{ticketId}/close
   getTicket:
     handler: handler.getTicket
@@ -107,3 +107,10 @@ functions:
           cors: true
           method: GET
           path: /teams/{teamId}/users
+  deleteTicket:
+    handler: handler.deleteTicket
+    events:
+      - http:
+          cors: true
+          method: DELETE
+          path: /tickets/{ticketId}

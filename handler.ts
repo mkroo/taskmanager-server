@@ -19,6 +19,7 @@ export const addTicket = funcToHandler(Ticket.addTicket);
 export const closeTicket = funcToHandler(Ticket.closeTicket);
 export const getTicket = funcToHandler(Ticket.getTicket);
 export const getTickets = funcToHandler(Ticket.getTickets);
+export const deleteTicket = funcToHandler(Ticket.deleteTicket);
 
 export const addTeamMember = funcToHandler(User.addTeamMember);
 export const getTeamMembers = funcToHandler(User.getTeamMembers);
