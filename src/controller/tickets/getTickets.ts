@@ -18,5 +18,16 @@ export const getTickets: APIGatewayProxyHandler = async (event) => {
     },
     relations: ['project'],
   });
-  return success({ tickets });
+
+  const sortedTickets = tickets.sort(sortTicket);
+  return success({ tickets: sortedTickets });
+};
+
+const sortTicket = (a: Ticket, b: Ticket) => {
+  const [ap, ai] = a.id.split('-');
+  const [bp, bi] = b.id.split('-');
+  if (ap !== bp) {
+    return ap > bp ? 1 : -1;
+  }
+  return parseInt(ai, 10) - parseInt(bi, 10);
 };
