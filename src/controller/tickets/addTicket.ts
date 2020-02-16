@@ -1,7 +1,7 @@
 import {  APIGatewayProxyHandler } from 'aws-lambda';
 import { TicketType, Ticket } from '../../entity/ticket';
 import { Project } from '../../entity';
-import { error, success } from '../../util';
+import { error, success, funcToHandler } from '../../util';
 
 interface Body {
   name: string;
@@ -10,7 +10,7 @@ interface Body {
   type?: TicketType;
   projectId: string;
 }
-export const addTicket: APIGatewayProxyHandler = async (event) => {
+const addTicket: APIGatewayProxyHandler = async (event) => {
   const { body } = event;
   const {
     name,
@@ -44,3 +44,5 @@ export const addTicket: APIGatewayProxyHandler = async (event) => {
 
   return success({ ticket });
 };
+
+export const handler = funcToHandler(addTicket);

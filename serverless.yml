@@ -4,12 +4,15 @@ service:
 plugins:
   - serverless-plugin-typescript
   - serverless-offline
+  - serverless-layers
 
 provider:
   name: aws
   runtime: nodejs10.x
   region: ap-northeast-2
   stage: ${opt:stage, 'dev'}
+  deploymentBucket:
+    name: task-manager-deployment-bucket
   apiGateway:
     minimumCompressionSize: 1024 # Enable gzip compression for responses > 1 KB
   environment:
@@ -22,95 +25,127 @@ provider:
     JWT_SECRET: qnjvfdWQJvfujqwM
     JWT_ISSUER: task.tablemanager.io
 
+custom:
+  serverless-layers:
+    packageManager: yarn
+
 functions:
   login:
-    handler: handler.login
+    handler: src/controller/auth/login.handler
     events:
       - http:
           cors: true
           method: POST
           path: /auth/login
   addProject:
-    handler: handler.addProject
+    handler: src/controller/projects/addProject.handler
     events:
       - http:
           cors: true
           method: POST
           path: /projects
   getProjects:
-    handler: handler.getProjects
+    handler: src/controller/projects/getProjects.handler
     events:
       - http:
           cors: true
           method: GET
           path: /projects
   addTask:
-    handler: handler.addTask
+    handler: src/controller/tasks/addTask.handler
     events:
       - http:
           cors: true
           method: POST
           path: /tasks
   deleteTask:
-    handler: handler.deleteTask
+    handler: src/controller/tasks/deleteTask.handler
     events:
       - http:
           cors: true
           method: DELETE
           path: /tasks/{taskId}
   getTasks:
-    handler: handler.getTasks
+    handler: src/controller/tasks/getTasks.handler
     events:
       - http:
           cors: true
           method: GET
           path: /tasks
   addTicket:
-    handler: handler.addTicket
+    handler: src/controller/tickets/addTicket.handler
     events:
       - http:
           cors: true
           method: POST
           path: /tickets
   closeTicket:
-    handler: handler.closeTicket
+    handler: src/controller/tickets/closeTicket.handler
     events:
       - http:
           cors: true
           method: PATCH
           path: /tickets/{ticketId}/close
   getTicket:
-    handler: handler.getTicket
+    handler: src/controller/tickets/getTicket.handler
     events:
       - http:
           cors: true
           method: GET
           path: /tickets/{ticketId}
   getTickets:
-    handler: handler.getTickets
+    handler: src/controller/tickets/getTickets.handler
     events:
       - http:
           cors: true
           method: GET
           path: /tickets
   addTeamMember:
-    handler: handler.addTeamMember
+    handler: src/controller/users/addTeamMember.handler
     events:
       - http:
           cors: true
           method: POST
           path: /users
   getTeamMembers:
-    handler: handler.getTeamMembers
+    handler: src/controller/users/getTeamMembers.handler
     events:
       - http:
           cors: true
           method: GET
           path: /teams/{teamId}/users
   deleteTicket:
-    handler: handler.deleteTicket
+    handler: src/controller/tickets/deleteTicket.handler
     events:
       - http:
           cors: true
           method: DELETE
           path: /tickets/{ticketId}
+  addPlan:
+    handler: src/controller/plans/addPlan.handler
+    events:
+      - http:
+          cors: true
+          method: POST
+          path: /plans
+  getUserPlans:
+    handler: src/controller/plans/getUserPlans.handler
+    events:
+      - http:
+          cors: true
+          method: GET
+          path: /users/{userId}/plans
+  updatePlan:
+    handler: src/controller/plans/updatePlan.handler
+    events:
+      - http:
+          cors: true
+          method: PATCH
+          path: /plans/{planId}
+  deletePlan:
+    handler: src/controller/plans/deletePlan.handler
+    events:
+      - http:
+          cors: true
+          method: DELETE
+          path: /plans/{planId}

@@ -1,8 +1,8 @@
 import { APIGatewayProxyHandler } from 'aws-lambda';
-import { error, success } from '../../util';
+import { error, success, funcToHandler } from '../../util';
 import { Task } from '../../entity';
 
-export const deleteTask: APIGatewayProxyHandler = async (event) => {
+const deleteTask: APIGatewayProxyHandler = async (event) => {
   const { pathParameters } = event;
   if (!pathParameters) {
     return error('INTERNAL_SERVER_ERROR');
@@ -15,3 +15,5 @@ export const deleteTask: APIGatewayProxyHandler = async (event) => {
   await task.remove();
   return success({ task });
 };
+
+export const handler = funcToHandler(deleteTask);

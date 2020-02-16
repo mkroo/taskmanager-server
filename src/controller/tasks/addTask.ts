@@ -1,14 +1,14 @@
 import { APIGatewayProxyHandler } from 'aws-lambda';
 import { headersToPayload } from '../../util/jwt';
 import { User, Ticket, Task } from '../../entity';
-import { error, success } from '../../util';
+import { error, success, funcToHandler } from '../../util';
 
 interface Body {
   content: string;
   workingTime: number;
   ticketId: string;
 }
-export const addTask: APIGatewayProxyHandler = async (event) => {
+const addTask: APIGatewayProxyHandler = async (event) => {
   const { body, headers } = event;
 
   let user: User;
@@ -34,3 +34,5 @@ export const addTask: APIGatewayProxyHandler = async (event) => {
 
   return success({ task });
 };
+
+export const handler = funcToHandler(addTask);

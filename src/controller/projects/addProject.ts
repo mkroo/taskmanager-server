@@ -1,13 +1,13 @@
 import { APIGatewayProxyHandler } from 'aws-lambda';
 import { Project } from '../../entity';
-import { success } from '../../util';
+import { success, funcToHandler } from '../../util';
 
 interface Body {
   id: string;
   name: string;
   description?: string;
 }
-export const addProject: APIGatewayProxyHandler = async (event) => {
+const addProject: APIGatewayProxyHandler = async (event) => {
   const { body } = event;
   const { id, name, description = '' } = body as unknown as Body;
   const project = new Project();
@@ -17,3 +17,5 @@ export const addProject: APIGatewayProxyHandler = async (event) => {
   await project.save();
   return success({ project });
 };
+
+export const handler = funcToHandler(addProject);

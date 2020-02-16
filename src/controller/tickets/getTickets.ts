@@ -1,9 +1,9 @@
 import { APIGatewayProxyHandler } from 'aws-lambda';
 import { Ticket } from '../../entity';
-import { success } from '../../util';
+import { success, funcToHandler } from '../../util';
 import { IsNull, Not } from 'typeorm';
 
-export const getTickets: APIGatewayProxyHandler = async (event) => {
+const getTickets: APIGatewayProxyHandler = async (event) => {
   const { queryStringParameters } = event;
   let close = false;
   if (queryStringParameters) {
@@ -31,3 +31,5 @@ const sortTicket = (a: Ticket, b: Ticket) => {
   }
   return parseInt(ai, 10) - parseInt(bi, 10);
 };
+
+export const handler = funcToHandler(getTickets);

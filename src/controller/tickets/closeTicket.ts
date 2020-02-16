@@ -1,8 +1,8 @@
 import { APIGatewayProxyHandler } from 'aws-lambda';
-import { error, success } from '../../util';
+import { error, success, funcToHandler } from '../../util';
 import { Ticket } from '../../entity';
 
-export const closeTicket: APIGatewayProxyHandler = async (event) => {
+const closeTicket: APIGatewayProxyHandler = async (event) => {
   const { pathParameters } = event;
   if (!pathParameters) {
     return error('INTERNAL_SERVER_ERROR');
@@ -16,3 +16,5 @@ export const closeTicket: APIGatewayProxyHandler = async (event) => {
   await ticket.save();
   return success({ ticket });
 };
+
+export const handler = funcToHandler(closeTicket);

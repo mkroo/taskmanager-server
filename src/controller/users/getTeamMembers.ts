@@ -1,8 +1,8 @@
 import { APIGatewayProxyHandler } from 'aws-lambda';
-import { error, success } from '../../util';
+import { error, success, funcToHandler } from '../../util';
 import { Team, User } from '../../entity';
 
-export const getTeamMembers: APIGatewayProxyHandler = async (event) => {
+const getTeamMembers: APIGatewayProxyHandler = async (event) => {
   const { pathParameters } = event;
   if (!pathParameters) {
     return error('INTERNAL_SERVER_ERROR');
@@ -15,3 +15,5 @@ export const getTeamMembers: APIGatewayProxyHandler = async (event) => {
   const users = await User.find({ where: { team } });
   return success({ users });
 };
+
+export const handler = funcToHandler(getTeamMembers);

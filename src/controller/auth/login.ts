@@ -1,13 +1,13 @@
 import { APIGatewayProxyHandler } from 'aws-lambda';
 import { User } from '../../entity';
-import { error, success } from '../../util';
+import { error, success, funcToHandler } from '../../util';
 
 interface Body {
   email: string;
   password: string;
 }
 
-export const login: APIGatewayProxyHandler = async (event) => {
+const login: APIGatewayProxyHandler = async (event) => {
   const { body } = event;
   const { email, password } = body as unknown as Body;
   const user = await User.findOne({ where: { email } });
@@ -20,3 +20,5 @@ export const login: APIGatewayProxyHandler = async (event) => {
   const accessToken = await user.createAccessToken();
   return success({ accessToken, user });
 };
+
+export const handler = funcToHandler(login);

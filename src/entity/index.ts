@@ -3,6 +3,7 @@ import { Task } from './task';
 import { Team } from './team';
 import { User } from './user';
 import { Ticket } from './ticket';
+import { Plan } from './plan';
 
 export {
   Project,
@@ -10,4 +11,5 @@ export {
   Team,
   User,
   Ticket,
+  Plan,
 };

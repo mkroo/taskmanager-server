@@ -1,11 +1,11 @@
 import { APIGatewayProxyHandler } from 'aws-lambda';
 import { Task, User } from '../../entity';
 import { In, Between, FindConditions } from 'typeorm';
-import { success, error } from '../../util';
+import { success, error, funcToHandler } from '../../util';
 import moment from 'moment';
 import 'moment-timezone';
 
-export const getTasks: APIGatewayProxyHandler = async (event) => {
+const getTasks: APIGatewayProxyHandler = async (event) => {
   const { queryStringParameters } = event;
 
   let from: Date = moment().tz('Asia/Seoul').startOf('date').toDate();
@@ -33,3 +33,5 @@ export const getTasks: APIGatewayProxyHandler = async (event) => {
   const tasks = await Task.find({ where, relations });
   return success({ tasks });
 };
+
+export const handler = funcToHandler(getTasks);

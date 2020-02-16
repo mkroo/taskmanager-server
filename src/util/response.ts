@@ -40,13 +40,19 @@ const errorTemplate = {
     define: 'INTERNAL_SERVER_ERROR',
     message: '내부 처리 중 오류가 발생되었습니다.',
   },
+  UNPROCESSABLE_ENTITY: {
+    statusCode: 422,
+    define: 'UNPROCESSABLE_ENTITY',
+    message: '처리 불가능한 엔티티입니다.',
+  },
 };
 type ErrorStatus =
   | 'BAD_REQUEST'
   | 'UNAUTHORIZED'
   | 'FORBIDDEN'
   | 'NOT_FOUND'
-  | 'INTERNAL_SERVER_ERROR';
+  | 'INTERNAL_SERVER_ERROR'
+  | 'UNPROCESSABLE_ENTITY';
 
 export const error = (status: ErrorStatus, err?: string | object): APIGatewayProxyResult => {
   const { statusCode, message } = errorTemplate[status];

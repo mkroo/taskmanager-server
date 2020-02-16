@@ -3,7 +3,10 @@ import middy from 'middy';
 import { jsonBodyParser, doNotWaitForEmptyEventLoop, httpErrorHandler, cors } from 'middy/middlewares';
 import { initialDB } from '../middleware';
 
-export const funcToHandler = (func: APIGatewayProxyHandler) => {
+interface HandlerOption {
+  permission?: 'user' | 'leader' | 'admin';
+}
+export const funcToHandler = (func: APIGatewayProxyHandler, option?: HandlerOption) => {
   const handler = middy(func);
 
   handler

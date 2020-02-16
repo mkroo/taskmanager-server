@@ -1,6 +1,6 @@
 import { APIGatewayProxyHandler } from 'aws-lambda';
 import { Team, User } from '../../entity';
-import { error, success } from '../../util';
+import { error, success, funcToHandler } from '../../util';
 
 interface Body {
   name: string;
@@ -8,7 +8,7 @@ interface Body {
   password: string;
   teamId: string;
 }
-export const addTeamMember: APIGatewayProxyHandler = async (event) => {
+const addTeamMember: APIGatewayProxyHandler = async (event) => {
   const { body } = event;
   const { name, email, password, teamId } = body as unknown as Body;
   const team = await Team.findOne(teamId);
@@ -29,3 +29,5 @@ export const addTeamMember: APIGatewayProxyHandler = async (event) => {
 
   return success({ user });
 };
+
+export const handler = funcToHandler(addTeamMember);
