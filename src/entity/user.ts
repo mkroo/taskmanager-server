@@ -3,11 +3,11 @@ import {
   PrimaryColumn, Column,
   ManyToOne,
 } from 'typeorm';
+import { InternalServerError } from 'http-errors';
 import { Team } from './team';
 
 import { compareSync, hashSync, genSaltSync } from 'bcryptjs';
 import { RefreshToken } from './auth';
-import { AuthenticationError } from 'apollo-server-lambda';
 import { generateAccessToken, Payload } from '../util/jwt';
 
 @Entity()
@@ -59,10 +59,10 @@ export class User extends BaseEntity {
       where: { token, user: this },
     });
     if (!tokenStorage) {
-      throw new AuthenticationError('TOKEN_NOT_FOUND');
+      throw new InternalServerError('TOKEN_NOT_FOUND');
     }
     if (tokenStorage.expiredAt < new Date()) {
-      throw new AuthenticationError('TOKEN_EXPIRED');
+      throw new InternalServerError('TOKEN_EXPIRED');
     }
   }
 }
