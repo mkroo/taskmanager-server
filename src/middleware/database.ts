@@ -38,5 +38,7 @@ export const mysql = async () => {
     });
   }
 
+  console.log(entities);
+
   entities.forEach(e => e.useConnection(conn));
 };
