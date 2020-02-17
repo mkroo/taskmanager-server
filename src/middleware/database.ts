@@ -18,14 +18,13 @@ export const mysql = async () => {
     connManager = getConnectionManager();
   }
 
+  const entities = [...Object.values(entityObject)];
   if (connManager.has(CONNECTION_NAME)) {
     conn = connManager.get(CONNECTION_NAME);
     if (!conn.isConnected) {
       await conn.connect();
     }
   } else {
-    const entities = [...Object.values(entityObject)];
-
     conn = await createConnection({
       entities,
       database: MYSQL_DATABASE,
@@ -37,7 +36,7 @@ export const mysql = async () => {
       port: 3306,
       name: CONNECTION_NAME,
     });
-
-    entities.forEach(e => e.useConnection(conn));
   }
+
+  entities.forEach(e => e.useConnection(conn));
 };
