@@ -149,3 +149,8 @@ functions:
           cors: true
           method: DELETE
           path: /plans/{planId}
+  reportAlert:
+    handler: src/controller/bot/reportAlert.handler
+    events:
+      - schedule: cron(0 7 ? * MON-FRI *)
+      - schedule: cron(30 7 ? * MON-FRI *)
