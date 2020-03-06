@@ -19,7 +19,8 @@ const alert: APIGatewayProxyHandler = async () => {
   });
 
   for (const user of users) {
-    const taskCount = tasks.filter(task => task.user.id === user.id).length;
+    const reducer = (kpi: number, task: Task) =>  kpi + task.workingTime;
+    const taskCount = tasks.filter(task => task.user.id === user.id).reduce(reducer, 0);
     const message = dedent`
       업무보고를 작성해주세요!
       현재 KPI : ${taskCount}
