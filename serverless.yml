@@ -152,5 +152,5 @@ functions:
   reportAlert:
     handler: src/controller/bot/reportAlert.handler
     events:
-      - schedule: cron(0 7 ? * MON-FRI *)
-      - schedule: cron(30 7 ? * MON-FRI *)
+      - schedule: cron(0 9 ? * MON-FRI *)
+      - schedule: cron(30 9 ? * MON-FRI *)
