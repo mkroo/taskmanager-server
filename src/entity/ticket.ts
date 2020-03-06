@@ -1,5 +1,5 @@
-import { Entity, BaseEntity, PrimaryColumn, Column, ManyToOne, BeforeInsert } from 'typeorm';
-import { Project } from '.';
+import { Entity, BaseEntity, PrimaryColumn, Column, ManyToOne } from 'typeorm';
+import { Project } from './project';
 
 export enum TicketType {
   DEV = 'development',
