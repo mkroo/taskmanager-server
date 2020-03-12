@@ -1,5 +1,5 @@
-import { Entity, BaseEntity, PrimaryColumn, Column, ManyToOne } from 'typeorm';
-import { Project } from './project';
+import { Entity, BaseEntity, PrimaryColumn, Column, ManyToOne } from 'typeorm'
+import { Project } from './project'
 
 export enum TicketType {
   DEV = 'development',
@@ -10,26 +10,26 @@ export enum TicketType {
 @Entity()
 export class Ticket extends BaseEntity {
   @PrimaryColumn('varchar')
-  public id!: string;
+  public id!: string
 
   @Column()
-  public name!: string;
+  public name!: string
 
   @Column()
-  public description: string = '';
+  public description: string = ''
 
   @Column({ type: 'enum', enum: TicketType })
-  public type!: TicketType;
+  public type!: TicketType
 
   @Column({ type: 'int' })
-  public priority: number = 5;
+  public priority: number = 5
 
   @Column({ type: 'datetime' })
-  public openedAt!: Date;
+  public openedAt!: Date
 
   @Column({ type: 'datetime', nullable: true })
-  public closedAt?: Date;
+  public closedAt?: Date
 
   @ManyToOne(type => Project)
-  public project!: Project;
+  public project!: Project
 }

@@ -1,7 +1,7 @@
-import { success, error } from './response';
-import { funcToHandler } from './funcToHandler';
+import { success, error } from './response'
+import { funcToHandler } from './funcToHandler'
 
 export {
   success, error,
   funcToHandler,
-};
+}

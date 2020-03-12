@@ -3,28 +3,28 @@ import {
   PrimaryGeneratedColumn, JoinColumn, Column,
   BeforeInsert, BeforeUpdate,
   OneToOne,
-} from 'typeorm';
-import { User } from '.';
+} from 'typeorm'
+import { User } from '.'
 
 @Entity()
 export class RefreshToken extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  public id!: string;
+  public id!: string
 
   @OneToOne(type => User)
   @JoinColumn()
-  public user!: User;
+  public user!: User
 
   @Column()
-  public token!: string;
+  public token!: string
 
   @Column()
-  public expiredAt!: Date;
+  public expiredAt!: Date
 
   @BeforeInsert()
   @BeforeUpdate()
   public setExpiry() {
-    const now = new Date().getTime();
-    this.expiredAt = new Date(now + 1000 * 60 * 60 * 24 * 14);
+    const now = new Date().getTime()
+    this.expiredAt = new Date(now + 1000 * 60 * 60 * 24 * 14)
   }
 }

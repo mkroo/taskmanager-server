@@ -1,23 +1,23 @@
-import { Entity, BaseEntity, PrimaryGeneratedColumn, ManyToOne, Column, CreateDateColumn } from 'typeorm';
-import { User } from './user';
+import { Entity, BaseEntity, PrimaryGeneratedColumn, ManyToOne, Column, CreateDateColumn } from 'typeorm'
+import { User } from './user'
 
 @Entity()
 export class Plan extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  public id!: string;
+  public id!: string
 
   @ManyToOne(type => User)
-  public user!: User;
+  public user!: User
 
   @CreateDateColumn()
-  public createdAt!: Date;
+  public createdAt!: Date
 
   @Column()
-  public content!: string;
+  public content!: string
 
   @Column({ type: 'date', nullable: true })
-  public deadline: string | null = null;
+  public deadline: string | null = null
 
   @Column({ type: 'datetime', nullable: true })
-  public closedAt: Date | null = null;
+  public closedAt: Date | null = null
 }
