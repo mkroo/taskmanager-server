@@ -20,6 +20,7 @@ const alert: APIGatewayProxyHandler = async () => {
 
   for (const user of users) {
     const taskCount = tasks.filter(task => task.user.id === user.id).length
+    if (taskCount >= 8) continue
     const message = dedent`
       업무보고를 작성해주세요!
       현재 KPI : ${taskCount}
