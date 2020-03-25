@@ -21,7 +21,9 @@ const check: APIGatewayProxyHandler = async () => {
   const standardKPI = 6
   const userList = []
   for (const user of users) {
-    const taskCount = tasks.filter(task => task.user.id === user.id).length
+    const taskCount = tasks
+      .filter(task => task.user.id === user.id)
+      .reduce((acc, cur) => acc + cur.workingTime, 0)
     if (taskCount <= standardKPI) {
       userList.push({ taskCount, name: user.name })
     }
