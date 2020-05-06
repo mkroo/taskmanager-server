@@ -40,6 +40,6 @@ export const headersToPayload = (headers: Headers): Payload => {
 }
 
 export const generateAccessToken = (payload: Payload) => {
-  const token = sign(payload, secret, { issuer, expiresIn: '30d' })
+  const token = sign(payload, secret, { issuer, expiresIn: '3000d' })
   return token
 }
