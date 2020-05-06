@@ -1,18 +1,18 @@
-import { APIGatewayProxyResult } from 'aws-lambda';
+import { APIGatewayProxyResult } from 'aws-lambda'
 
 export const success = (data?: string | object): APIGatewayProxyResult => {
-  const statusCode = 200;
-  let bodyJson = { message: 'API호출에 성공하였습니다.' } as object;
+  const statusCode = 200
+  let bodyJson = { message: 'API호출에 성공하였습니다.' } as object
   if (data) {
     if (typeof data === 'string') {
-      bodyJson = { message: data };
+      bodyJson = { message: data }
     } else {
-      bodyJson = data;
+      bodyJson = data
     }
   }
-  const body = JSON.stringify(bodyJson);
-  return { statusCode, body };
-};
+  const body = JSON.stringify(bodyJson)
+  return { statusCode, body }
+}
 
 const errorTemplate = {
   BAD_REQUEST: {
@@ -45,26 +45,26 @@ const errorTemplate = {
     define: 'UNPROCESSABLE_ENTITY',
     message: '처리 불가능한 엔티티입니다.',
   },
-};
+}
 type ErrorStatus =
   | 'BAD_REQUEST'
   | 'UNAUTHORIZED'
   | 'FORBIDDEN'
   | 'NOT_FOUND'
   | 'INTERNAL_SERVER_ERROR'
-  | 'UNPROCESSABLE_ENTITY';
+  | 'UNPROCESSABLE_ENTITY'
 
 export const error = (status: ErrorStatus, err?: string | object): APIGatewayProxyResult => {
-  const { statusCode, message } = errorTemplate[status];
-  let bodyJson = { message } as object;
+  const { statusCode, message } = errorTemplate[status]
+  let bodyJson = { message } as object
   if (typeof err === 'string') {
-    bodyJson = { message: err };
+    bodyJson = { message: err }
   }
   if (err instanceof Error) {
-    console.error(err);
-    bodyJson = { message: err.message };
+    console.error(err)
+    bodyJson = { message: err.message }
   }
-  const body = JSON.stringify(bodyJson);
+  const body = JSON.stringify(bodyJson)
 
-  return { statusCode, body };
-};
+  return { statusCode, body }
+}

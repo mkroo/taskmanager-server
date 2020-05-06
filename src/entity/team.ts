@@ -1,13 +1,13 @@
-import { BaseEntity, PrimaryColumn, Column, Entity } from 'typeorm';
+import { BaseEntity, PrimaryColumn, Column, Entity } from 'typeorm'
 
 @Entity()
 export class Team extends BaseEntity {
   @PrimaryColumn()
-  public id!: string;
+  public id!: string
 
   @Column()
-  public name!: string;
+  public name!: string
 
   @Column()
-  public description?: string;
+  public description?: string
 }

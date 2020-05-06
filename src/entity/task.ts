@@ -2,34 +2,34 @@ import {
   BaseEntity, Entity,
   ManyToOne,
   PrimaryGeneratedColumn, Column, CreateDateColumn,
-} from 'typeorm';
+} from 'typeorm'
 
-import { User } from './user';
-import { Ticket } from './ticket';
+import { User } from './user'
+import { Ticket } from './ticket'
 
 @Entity()
 export class Task extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
-  public id!: string;
+  public id!: string
 
   @Column()
-  public content!: string;
+  public content!: string
 
   @CreateDateColumn()
-  public createdAt!: Date;
+  public createdAt!: Date
 
   @Column({ type: 'datetime' })
-  public openedAt?: Date;
+  public openedAt?: Date
 
   @Column({ type: 'datetime' })
-  public closedAt?: Date;
+  public closedAt?: Date
 
   @Column()
-  public workingTime!: number;
+  public workingTime!: number
 
   @ManyToOne(type => Ticket)
-  public ticket!: Ticket;
+  public ticket!: Ticket
 
   @ManyToOne(type => User)
-  public user!: User;
+  public user!: User
 }

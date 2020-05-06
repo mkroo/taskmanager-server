@@ -1,15 +1,15 @@
-import { APIGatewayProxyHandler } from 'aws-lambda';
-import { Ticket } from '../../entity';
-import { success, funcToHandler } from '../../util';
-import { IsNull, Not } from 'typeorm';
+import { APIGatewayProxyHandler } from 'aws-lambda'
+import { Ticket } from '../../entity'
+import { success, funcToHandler } from '../../util'
+import { IsNull, Not } from 'typeorm'
 
 const getTickets: APIGatewayProxyHandler = async (event) => {
-  const { queryStringParameters } = event;
-  let close = false;
+  const { queryStringParameters } = event
+  let close = false
   if (queryStringParameters) {
-    const { closeQuery } = queryStringParameters;
+    const { closeQuery } = queryStringParameters
     if (closeQuery) {
-      close = true;
+      close = true
     }
   }
   const tickets = await Ticket.find({
@@ -17,19 +17,19 @@ const getTickets: APIGatewayProxyHandler = async (event) => {
       closedAt: close ? Not(IsNull()) : IsNull(),
     },
     relations: ['project'],
-  });
+  })
 
-  const sortedTickets = tickets.sort(sortTicket);
-  return success({ tickets: sortedTickets });
-};
+  const sortedTickets = tickets.sort(sortTicket)
+  return success({ tickets: sortedTickets })
+}
 
 const sortTicket = (a: Ticket, b: Ticket) => {
-  const [ap, ai] = a.id.split('-');
-  const [bp, bi] = b.id.split('-');
+  const [ap, ai] = a.id.split('-')
+  const [bp, bi] = b.id.split('-')
   if (ap !== bp) {
-    return ap > bp ? 1 : -1;
+    return ap > bp ? 1 : -1
   }
-  return parseInt(ai, 10) - parseInt(bi, 10);
-};
+  return parseInt(ai, 10) - parseInt(bi, 10)
+}
 
-export const handler = funcToHandler(getTickets);
+export const handler = funcToHandler(getTickets)

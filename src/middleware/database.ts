@@ -1,28 +1,28 @@
-import { ConnectionManager, Connection, getConnectionManager, createConnection } from 'typeorm';
-import * as entityObject from '../entity';
-import 'reflect-metadata';
+import { ConnectionManager, Connection, getConnectionManager, createConnection } from 'typeorm'
+import * as entityObject from '../entity'
+import 'reflect-metadata'
 
 const {
   MYSQL_HOST,
   MYSQL_USERNAME,
   MYSQL_PASSWORD,
   MYSQL_DATABASE,
-} = process.env;
-const CONNECTION_NAME = 'default';
+} = process.env
+const CONNECTION_NAME = 'default'
 
 export const mysql = async () => {
-  let connManager: ConnectionManager | undefined;
-  let conn: Connection;
+  let connManager: ConnectionManager | undefined
+  let conn: Connection
 
   if (!connManager) {
-    connManager = getConnectionManager();
+    connManager = getConnectionManager()
   }
 
-  const entities = [...Object.values(entityObject)];
+  const entities = [...Object.values(entityObject)]
   if (connManager.has(CONNECTION_NAME)) {
-    conn = connManager.get(CONNECTION_NAME);
+    conn = connManager.get(CONNECTION_NAME)
     if (!conn.isConnected) {
-      await conn.connect();
+      await conn.connect()
     }
   } else {
     conn = await createConnection({
@@ -35,10 +35,10 @@ export const mysql = async () => {
       password: MYSQL_PASSWORD,
       port: 3306,
       name: CONNECTION_NAME,
-    });
+    })
   }
 
-  console.log(entities);
+  console.log(entities)
 
-  entities.forEach(e => e.useConnection(conn));
-};
+  entities.forEach(e => e.useConnection(conn))
+}
