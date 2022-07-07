@@ -26,7 +26,7 @@
     "http-errors": "^1.7.3",
     "jsonwebtoken": "^8.5.1",
     "middy": "^0.33.2",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "moment-timezone": "^0.5.27",
     "mysql2": "^2.1.0",
     "reflect-metadata": "^0.1.13",
